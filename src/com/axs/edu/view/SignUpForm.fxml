@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerFormContext" prefHeight="450.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.axs.edu.controller.SignUpFormController">
+   <children>
+      <ImageView fitHeight="462.0" fitWidth="282.0" layoutX="-4.0" layoutY="-12.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/security/login-bg.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="300.0" layoutY="142.0" prefHeight="31.0" prefWidth="398.0" promptText="Root Email" />
+      <PasswordField layoutX="300.0" layoutY="188.0" prefHeight="31.0" prefWidth="398.0" promptText="Password" />
+      <Label layoutX="300.0" layoutY="48.0" text="Register">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="300.0" layoutY="239.0" mnemonicParsing="false" onAction="#signUpOnAction" prefHeight="39.0" prefWidth="398.0" style="-fx-background-color: #0D99FF;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="300.0" layoutY="348.0" mnemonicParsing="false" onAction="#alreadyHavAnAccountOnAction" prefHeight="31.0" prefWidth="398.0" style="-fx-background-color: #34495E;" text="Already Have an Account" textFill="WHITE" />
+      <Label layoutX="488.0" layoutY="306.0" text="OR">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="300.0" layoutY="94.0" promptText="First Name" />
+      <TextField layoutX="512.0" layoutY="94.0" promptText="Last Name" />
+   </children>
+</AnchorPane>
