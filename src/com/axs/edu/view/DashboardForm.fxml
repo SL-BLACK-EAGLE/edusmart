@@ -28,7 +28,7 @@
             </font>
         </Label>
         <Separator layoutX="725.0" layoutY="17.0" orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0" />
-        <AnchorPane layoutX="14.0" layoutY="66.0" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #1ABC9C;">
+        <AnchorPane fx:id="studentClickOnAction" layoutX="14.0" layoutY="66.0" onMouseClicked="#studentClickOnAction" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #1ABC9C;">
             <children>
                 <Label layoutX="59.0" layoutY="142.0" text="Student" textFill="WHITE">
                     <font>
@@ -45,7 +45,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </AnchorPane>
-        <AnchorPane layoutX="201.0" layoutY="66.0" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #D35400;">
+        <AnchorPane layoutX="201.0" layoutY="66.0" onMouseClicked="#programClickOnAction" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #D35400;">
             <children>
                 <Label layoutX="60.0" layoutY="142.0" text="Programs" textFill="WHITE">
                     <font>
@@ -62,7 +62,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </AnchorPane>
-        <AnchorPane layoutX="387.0" layoutY="66.0" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #2C3E50;">
+        <AnchorPane layoutX="387.0" layoutY="66.0" onMouseClicked="#trainerClickOnAction" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #2C3E50;">
             <children>
                 <Label layoutX="60.0" layoutY="142.0" text="Trainers" textFill="WHITE">
                     <font>
@@ -79,7 +79,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </AnchorPane>
-        <AnchorPane layoutX="574.0" layoutY="66.0" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #8E44AD;">
+        <AnchorPane layoutX="574.0" layoutY="66.0" onMouseClicked="#intakeClickOnAction" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #8E44AD;">
             <children>
                 <Label layoutX="62.0" layoutY="142.0" text="Intakes" textFill="WHITE">
                     <font>
@@ -96,7 +96,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </AnchorPane>
-        <AnchorPane layoutX="761.0" layoutY="66.0" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #C0392B;">
+        <AnchorPane layoutX="761.0" layoutY="66.0" onMouseClicked="#incomeClickOnAction" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #C0392B;">
             <children>
                 <Label layoutX="62.0" layoutY="142.0" text="Income" textFill="WHITE">
                     <font>
@@ -113,7 +113,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </AnchorPane>
-        <AnchorPane layoutX="293.0" layoutY="249.0" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #487EB0;">
+        <AnchorPane layoutX="293.0" layoutY="249.0" onMouseClicked="#registrationClickOnAction" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #487EB0;">
             <children>
                 <Label layoutX="49.0" layoutY="142.0" text="Registration" textFill="WHITE">
                     <font>
@@ -130,7 +130,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </AnchorPane>
-        <AnchorPane layoutX="480.0" layoutY="249.0" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #2980B9;">
+        <AnchorPane layoutX="480.0" layoutY="249.0" onMouseClicked="#reportClickOnAction" prefHeight="163.0" prefWidth="175.0" style="-fx-background-color: #2980B9;">
             <children>
                 <Label layoutX="57.0" layoutY="142.0" text="Reports" textFill="WHITE">
                     <font>

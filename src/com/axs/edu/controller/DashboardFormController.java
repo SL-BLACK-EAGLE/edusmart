@@ -33,7 +33,7 @@ public class DashboardFormController {
     }
 
     public void registrationClickOnAction(MouseEvent mouseEvent) throws IOException {
-        setUi("RegistrationsForm");
+        setUi("RegistrationForm");
     }
 
     public void reportClickOnAction(MouseEvent mouseEvent) throws IOException {

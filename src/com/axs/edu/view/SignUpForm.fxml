@@ -16,14 +16,14 @@
             <Image url="@../assets/security/login-bg.png" />
          </image>
       </ImageView>
-      <TextField layoutX="300.0" layoutY="142.0" prefHeight="31.0" prefWidth="398.0" promptText="Root Email" />
-      <PasswordField layoutX="300.0" layoutY="188.0" prefHeight="31.0" prefWidth="398.0" promptText="Password" />
+      <TextField fx:id="txtEmail" layoutX="300.0" layoutY="142.0" onAction="#emailOnAction" prefHeight="31.0" prefWidth="398.0" promptText="Root Email" />
+      <PasswordField fx:id="txtPassword" layoutX="300.0" layoutY="188.0" onAction="#passwordNextOnAction" prefHeight="31.0" prefWidth="398.0" promptText="Password" />
       <Label layoutX="300.0" layoutY="48.0" text="Register">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="300.0" layoutY="239.0" mnemonicParsing="false" onAction="#signUpOnAction" prefHeight="39.0" prefWidth="398.0" style="-fx-background-color: #0D99FF;" text="Sign Up" textFill="WHITE">
+      <Button fx:id="btnSignUp" layoutX="300.0" layoutY="239.0" mnemonicParsing="false" onAction="#signUpOnAction" prefHeight="39.0" prefWidth="398.0" style="-fx-background-color: #0D99FF;" text="Sign Up" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -34,7 +34,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="300.0" layoutY="94.0" promptText="First Name" />
-      <TextField layoutX="512.0" layoutY="94.0" promptText="Last Name" />
+      <TextField fx:id="txtFirstName" layoutX="300.0" layoutY="94.0" onAction="#fNameNextOnAction" promptText="First Name" />
+      <TextField fx:id="txtLastName" layoutX="512.0" layoutY="94.0" onAction="#lNameNextOnAction" promptText="Last Name" />
    </children>
 </AnchorPane>
